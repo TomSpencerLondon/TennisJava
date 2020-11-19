@@ -31,7 +31,9 @@ class TennisScoreCalculatorTest {
       "2, 0, 'thirty love'",
       "2, 1, 'thirty fifteen'",
       "2, 2, 'thirty thirty'",
-      "3, 3, 'deuce'"
+      "3, 3, 'deuce'",
+      "4, 3, 'advantage player 1'",
+      "3, 4, 'advantage player 2'"
   })
   void return_love_love_for_0_0(int player1Points, int player2Points, String result) {
     TennisScoreCalculator tennisScoreCalculator = new TennisScoreCalculator();

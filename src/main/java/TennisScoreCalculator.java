@@ -10,8 +10,10 @@ public class TennisScoreCalculator {
   );
 
   public String score(int player1Points, int player2Points) {
-    if (isDeuce(player1Points, player2Points)){
+    if (isDeuce(player1Points, player2Points)) {
       return "deuce";
+    } else if (player1Points >= 3 || player2Points >= 3) {
+      return player1Points > player2Points ? "advantage player 1" : "advantage player 2";
     }
     return scores.get(player1Points) + " " + scores.get(player2Points);
   }
